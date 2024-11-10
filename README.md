@@ -9,7 +9,6 @@ Architecture
 Technologies Used
 Installation
 Usage
-Project Structure
 Future Improvements
 Contributing
 
@@ -21,13 +20,18 @@ View a list of all added wishes.
 Simple and clean user interface using Material Design 3.
 
 Screenshots
+
 Home Screen
+
 The Home screen displays a list of all wishes. Users can add new wishes using the floating action button.
+
 ![image](https://github.com/user-attachments/assets/d35110b8-0d00-41fd-ae1a-13e1ce1b2a41)
 
 
 Add/Edit Wish Screen
+
 The Add/Edit screen allows users to add a new wish or update an existing one.
+
 ![image](https://github.com/user-attachments/assets/564073ae-04b1-4103-adec-4fc3ffbedc2c)
 
 
@@ -35,8 +39,11 @@ Architecture
 The project follows the MVVM (Model-View-ViewModel) architecture:
 
 Model: Defines the data structure (Wish.kt) and the database access layer using Room (WishDao.kt).
+
 ViewModel: Handles business logic and provides data to the UI (WishViewModel.kt).
+
 View: Uses Jetpack Compose for creating UI components (HomeView.kt, AddEditDetailView.kt).
+
 Technologies Used
 Kotlin: Programming language.
 Jetpack Compose: Modern toolkit for building native Android UI.
@@ -45,6 +52,7 @@ Coroutines: For asynchronous operations.
 Material Design 3: For UI components and theming.
 Navigation Component: For handling navigation between screens.
 Installation
+
 To run this project, follow these steps:
 
 Clone the repository:
@@ -65,25 +73,7 @@ Tap the + button on the Home screen to add a new wish.
 Enter the title and description of the wish and tap "Add Wish".
 Swipe left on a wish item to delete it.
 Tap on a wish item to update its title or description.
-Project Structure
-bash
-Copy code
-Wishly/
-├── app/
-│   ├── src/
-│   │   └── main/
-│   │       ├── java/eu/tutorials/wishly/
-│   │       │   ├── data/        # Data models and DAO interfaces
-│   │       │   ├── ui/          # Composable functions for UI
-│   │       │   ├── viewmodel/   # ViewModel and ViewModelFactory
-│   │       │   ├── navigation/  # Navigation setup
-│   │       │   ├── theme/       # App theme (colors, typography)
-│   │       │   └── MainActivity.kt
-│   │       └── res/
-│   │           └── layout/      # XML layouts (if any)
-├── build.gradle
-├── settings.gradle
-└── README.md
+
 Key Files
 Wish.kt: Data model for wish items.
 WishDao.kt: DAO interface for accessing the Room database.
